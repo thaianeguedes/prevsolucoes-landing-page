@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrevSoluções</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+...etc" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Font Class -->
+    <style>
+      .font-bricolage {
+        font-family: 'Bricolage Grotesque', sans-serif;
+      }
+    </style>
+  </head>
+
+
+  <body class="font-bricolage text-[#144444]">
+   
+    <!-- Navbar -->
+<nav class="border-b border-gray-200 font-bricolage backdrop-blur bg-transparent bg-[#DEE9E7]/60 relative">
+
+  <!-- Forma geométrica com blur por baixo -->
+  <div class="absolute inset-0 bg-[#DEE9E7] blur-xl rounded-full opacity-50 z-0 w-[200%] h-[300%] -translate-x-1/2 -translate-y-1/2"></div>
+
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative z-10">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+     
+      <span class="text-2xl font-semibold whitespace-nowrap text-[#144444]">PrevSoluções</span>
+    </a>
+
+    <!-- Botões: Consultar CPF + menu toggle -->
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+      <a href="https://wa.me/557996057232" target="_blank" rel="noopener noreferrer">
+      <button type="button"
+        class="text-white bg-[#144444] hover:bg-[#0e3333] focus:ring-4 focus:outline-none focus:ring-[#144444] font-medium rounded-lg text-lg px-4 py-2 text-center">
+        Consultar CPF
+      </button>
+      </a>
+
+      <button id="menu-toggle" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#144444] rounded-lg md:hidden hover:bg-[#144444] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#144444]"
+        aria-expanded="false">
+        <span class="sr-only">Abrir menu principal</span>
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu links -->
+    <div id="mobile-menu"
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+      <ul
+        class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-lg">
+        <li>
+          <a href="#"
+            class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#"
+            class="nav-link">Sobre</a>
+        </li>
+        <li>
+          <a href="#"
+            class="nav-link">Serviços</a>
+        </li>
+        <li>
+          <a href="#"
+            class="nav-link">Contato</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="bg-white mt-10 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Text Content -->
+        <div class="border px-4 md:px-6 py-8 md:py-10 rounded-lg font-semibold text-center md:text-left">
+          <span
+            class="inline-flex items-center gap-1 bg-[#E5FE70] text-[0.65rem] sm:text-xs font-semibold px-2.5 py-1 rounded-full mb-4 sm:mb-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3.5 h-3.5 sm:w-4 sm:h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 22c5-1 8-5 8-10V5l-8-3-8 3v7c0 5 3 9 8 10z"
+              />
+            </svg>
+            LIMPE SEU NOME
+          </span>
+
+          <h1 class="text-2xl sm:text-3xl lg:text-5xl leading-snug font-bold mb-3 sm:mb-4 tracking-wide">
+            Limpe seu nome no Registrato CR
+            com a PrevSoluções
+          </h1>
+
+          <p class="text-base sm:text-lg md:text-[1rem] mb-5 sm:mb-6 font-normal max-w-prose mx-auto md:mx-0">
+            Conte com a PrevSoluções para remover restrições no Registrato SCR (BACEN) de seu CPF ou CNPJ de forma legal e eficiente.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+
+            <a href="https://wa.me/557996057232" 
+            target="_blank" 
+            rel="noopener noreferrer"
+              type="button"
+              class="inline-flex justify-center items-center gap-2 group bg-[#144444] hover:bg-[#0e3333] text-white font-semibold px-5 py-3 rounded-lg transition focus:outline-none focus:ring-4 focus:ring-[#144444] text-[1rem]"
+            >
+              <span>Consultar CPF grátis</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-[1em] h-[1em]"
+              >
+                <line x1="0" y1="12" x2="19" y2="12" class="transition-transform group-hover:translate-x-1"></line>
+                <polyline
+                  points="12 5 19 12 12 19"
+                  class="transition-transform group-hover:translate-x-1"
+                ></polyline>
+              </svg>
+            </a>
+
+            <a 
+             href="https://wa.me/557996057232" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="flex items-center justify-center border border-[#144444] text-[#144444] font-semibold px-5 py-2 rounded-lg text-sm md:text-base text-[1rem]"
+          >
+          Fale conosco
+            </a>
+
+
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative sm:mt-0 mt-12">
+          <img
+            src="./images/idosasorrindo.png"
+            alt="Pessoa feliz"
+            class="rounded-lg shadow-lg w-full max-w-sm sm:max-w-md mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Toggle Menu Script -->
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- ----------------beneficios section------------------->
+<section class="mt-0 py-12 px-6 md:px-16">
+  <div class="mx-auto mb-12 gap-6 items-center text-center">
+    <span class="inline-block bg-[#E5FE70] text-black font-semibold px-3 py-1 rounded-md mb-5">
+      Limpe seu nome
+    </span>
+
+    <h2 class="text-[42px] font-bold text-[#144444] leading-tight font-bricolage">
+      Benefícios
+    </h2> 
+
+    <p class="text-[18px] text-[#144444] max-w-2xl mx-auto">
+      Ao escolher a PrevSoluções, você garante agilidade, legalidade e suporte especializado na regularização do seu nome no Registrato SCR.
+    </p>
+  </div>
+
+  <!-- cards -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Card 1 -->
+    <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-7 h-7 text-[#144444] mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M2 5a2 2 0 0 1 2-2h4v2H4v10h4v2H4a2 2 0 0 1-2-2V5Zm12-2a2 2 0 0 1 2 2v3.586l1.707-1.707 1.414 1.414L16 12l-5.121-5.121 1.414-1.414L14 8.586V5a2 2 0 0 1 2-2Z"/>
+      </svg>
+      <h3 class="text-[25px] font-semibold text-gray-900 mb-2 font-bricolage">Remoção Rápida e Legal</h3>
+      <p class="text-gray-600 text-[18px] mb-4">Processo ágil e 100% dentro da legalidade, com suporte de profissionais experientes.</p>
+      <a href="https://wa.me/557996057232" target="_blank" rel="noopener noreferrer" class="inline-block mt-auto text-sm font-semibold text-[#144444] hover:underline">Saiba mais →</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-7 h-7 text-[#144444] mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46 1.287 3.966c.3.921-.755 1.688-1.54 1.117L10 13.347l-3.385 2.46c-.784.571-1.838-.196-1.539-1.117l1.287-3.966-3.385-2.46c-.784-.57-.38-1.81.588-1.81h4.178l1.286-3.967Z"/>
+      </svg>
+      <h3 class="text-[25px] font-semibold text-gray-900 mb-2 font-bricolage">Alta Taxa de Sucesso</h3>
+      <p class="text-gray-600 text-[18px] mb-4">Mais de 90% dos nossos clientes conseguem limpar seu nome em até 60 dias.</p>
+      <a href= "https://wa.me/557996057232" target="_blank" rel="noopener noreferrer"class="inline-block mt-auto text-sm font-semibold text-[#144444] hover:underline">Saiba mais →</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-7 h-7 text-[#144444] mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M3 3a1 1 0 0 1 1-1h6a2 2 0 0 1 2 2v3h3.586a1 1 0 0 1 .707 1.707l-9 9a1 1 0 0 1-1.414 0l-3.88-3.88a1 1 0 0 1 0-1.414l9-9A1 1 0 0 1 14.586 5H11V3a4 4 0 0 0-4-4H4a1 1 0 0 1-1 1Z"/>
+      </svg>
+      <h3 class="text-[25px] font-semibold text-gray-900 mb-2 font-bricolage">Atendimento Personalizado</h3>
+      <p class="text-gray-600 text-[18px] mb-4">Equipe pronta para orientar cada etapa, com acompanhamento individual do seu caso.</p>
+      <a href= "https://wa.me/557996057232" target="_blank" rel="noopener noreferrer"class="inline-block mt-auto text-sm font-semibold text-[#144444] hover:underline">Saiba mais →</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<div class="bg-[#11403D] text-white rounded-xl p-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <!-- Imagem -->
+  <div>
+    <img src="./images/empresario-trabalhando-com-documentacao-na-mesa.jpg" alt="Woman working" class="rounded-lg">
+  </div>
+
+  <!-- Texto e barra -->
+  <div>
+    <h2 class="text-3xl md:text-4xl font-bold text-white font-bricolage">
+      Entenda o registrato SCR
+    </h2>
+    <p class="text-white mt-4">
+      O Banco Central mantém uma base de dados chamada SCR, que registra as informações de crédito de pessoas e empresas. Quando há dívidas não pagas, essas informações ficam registradas, o que pode dificultar o acesso a novos créditos e prejudicar sua saúde financeira.
+    <br> <br>
+     A boa notícia é que, com uma liminar judicial, é possível remover essas restrições temporariamente, enquanto o caso é resolvido na Justiça. Isso permite que você recupere sua capacidade de crédito e tenha mais tranquilidade para negociar suas dívidas.
+    </p>
+
+    
+<a href="https://wa.me/557996057232" target="_blank" rel="noopener noreferrer">
+  <button class="mt-6 bg-[#E5FE70] text-[#11403D] font-semibold py-3 px-6 rounded-md hover:brightness-110 transition">
+    Fale conosco no whatsapp!
+  </button>
+</a>
+
+   
+  </div>
+</div>
+
+
+
+
+
+
+
+<section class="mt-12 py-12 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+    <!-- Coluna Esquerda -->
+    <div class="w-full font-semibold py rounded-lg">
+      <span class="inline-flex items-center gap-2 bg-[#E5FE70] text-[#144444] font-semibold px-3 py-1 rounded-full mb-5">
+        <!-- Ícone FAQ -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        FAQ
+      </span>
+
+      <h1 class="text-[42px] font-bold text-[#144444] tracking-wider mb-2 font-bricolage">
+        Ficou com alguma dúvida?
+      </h1>
+      <p class="text-[25px] text-[#144444] mb-5">
+        Confira aqui as perguntas mais frequentes.
+      </p>
+
+      <hr class="my-8 border-[#144444]" />
+
+      <div class="p-6 bg-[#f4fdfd] rounded-lg">
+        <!-- Ícone conversa -->
+        <svg class="w-7 h-7 text-[#144444] mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m-2 8c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8a7.963 7.963 0 01-2.344 5.656L21 21" />
+        </svg>
+
+        <a href="#">
+          <h5 class="text-lg font-semibold text-[#144444]">Não encontrou sua dúvida aqui?</h5>
+        </a>
+        <p class="mb-3 font-normal text-[#144444]">Fale com a nossa equipe.</p>
+
+        <a href="https://wa.me/557996057232" target="_blank" rel="noopener noreferrer">
+        <button class="text-[#144444] border border-[#144444] px-6 py-2 rounded-lg">
+          Fale conosco
+        </button>
+        </a>
+      
+
+      </div>
+    </div>
+
+    <!-- Coluna Direita -->
+    <div class="relative w-full space-y-4">
+     
+<!-- Coluna Direita -->
+<div class="relative w-full space-y-4">
+
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>O que é o Registrato SCR do Banco Central?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      O Registrato é um sistema gratuito do Banco Central do Brasil que permite consultar informações financeiras, como empréstimos, financiamentos, contas bancárias, chaves Pix cadastradas e cheques sem fundos associados ao seu CPF ou CNPJ. 
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>Por que meu nome está restrito no Registrato?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      Se você possui dívidas vencidas ou prejuízos registrados por instituições financeiras, essas informações podem constar no Sistema de Informações de Crédito (SCR) do Banco Central, impactando negativamente seu acesso a crédito e outros serviços financeiros.
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>Como a PrevSoluções pode me ajudar a limpar meu nome?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      A PrevSoluções oferece assessoria financeira especializada para analisar sua situação no Registrato e, se necessário, ingressar com medidas legais, como ações judiciais, visando a remoção de restrições e a melhoria do seu perfil de crédito
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span> É legal remover meu nome do Registrato por meio de ação judicial?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      Sim. A utilização de medidas judiciais, como liminares, é uma prática legal para contestar registros indevidos ou negociar condições mais favoráveis, desde que haja fundamentos jurídicos válidos.
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>Quais são os benefícios de limpar meu nome no Registrato?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+     Restabelecimento do acesso a serviços financeiros e crédito, melhoria na classificação de risco (rating), aumento do score de crédito e redução da probabilidade de prejuízo e aumento da capacidade de crédito.
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>A PrevSoluções garante a remoção das restrições?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      A PrevSoluções se compromete a utilizar todos os meios legais disponíveis para auxiliar na remoção das restrições. No entanto, o sucesso depende de diversos fatores, incluindo a análise jurídica do caso e as decisões judiciais. 
+    </div>
+  </div>
+  
+  <div class="border border-[#144444] rounded-lg">
+    <button 
+      class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-[#144444]"
+      onclick="toggleFaq(this)"
+    >
+      <span>Quanto tempo leva para limpar meu nome no Registrato?</span>
+      <div class="w-6 h-6 flex items-center justify-center border border-[#144444] rounded-[3px] bg-[#E5FE70]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 icon-plus transition-transform duration-300 " fill="none" viewBox="0 0 24 24" stroke="#144444" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+        </svg>
+      </div>
+    </button>
+    <div class="hidden px-4 pb-4 text-[#144444]">
+      O prazo pode variar conforme o caso, mas geralmente o processo leva de 60 a 90 dias, dependendo da complexidade da situação e das medidas adotadas.
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  function toggleFaq(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('svg');
+    answer.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+  }
+</script>
+
+
+<hr class="my-8 border-gray-300" />
+
+<!-- Footer -->
+<footer class="bg-white">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="#" class="flex items-center">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">PrevSoluções</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Links</h2>
+          <ul class="text-black dark:text-gray-500 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Sobre</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Nossas redes</h2>
+          <ul class="text-gray-500 dark:text-gray-500 font-medium">
+            <li class="mb-4 flex items-center gap-2">
+              <i class="fab fa-instagram text-[#144444] text-xl"></i>
+              <a href="https://www.instagram.com/prevsolucoesbrasil/" class="hover:underline text-[#144444]">Instagram</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp text-[#144444] text-xl"></i>
+              <a href="https://wa.me/557996057232" class="hover:underline text-[#144444]">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Legal</h2>
+          <ul class="text-gray-500 dark:text-gray-500 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:flex sm:items-center sm:justify-between mt-4">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-500 font-bricolage">
+        © 2025 <a href="#" class="hover:underline">PrevSoluções</a>. All Rights Reserved.
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
