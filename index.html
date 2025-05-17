@@ -28,8 +28,9 @@
 
 
   <body class="font-bricolage text-[#144444]">
+
    
-    <!-- Navbar -->
+ <!-- Navbar -->
 <nav class="border-b border-gray-200 font-bricolage backdrop-blur bg-transparent bg-[#DEE9E7]/60 relative">
 
   <!-- Forma geométrica com blur por baixo -->
@@ -70,19 +71,19 @@
       <ul
         class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-lg">
         <li>
-          <a href="#"
+          <a href="#home"
             class="nav-link">Home</a>
         </li>
         <li>
-          <a href="#"
-            class="nav-link">Sobre</a>
+          <a href="#beneficios"
+            class="nav-link">Benefícios</a>
         </li>
         <li>
-          <a href="#"
-            class="nav-link">Serviços</a>
+          <a href="#faq"
+            class="nav-link">FAQ</a>
         </li>
         <li>
-          <a href="#"
+          <a href="https://wa.me/557996057232"
             class="nav-link">Contato</a>
         </li>
       </ul>
@@ -93,9 +94,8 @@
 
 
 
-
-    <!-- Hero Section -->
-    <section class="bg-white mt-10 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
+<!-- Hero Section -->
+    <section id="home" class="bg-white mt-10 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- Text Content -->
         <div class="border px-4 md:px-6 py-8 md:py-10 rounded-lg font-semibold text-center md:text-left">
@@ -126,7 +126,7 @@
           </span>
 
           <h1 class="text-2xl sm:text-3xl lg:text-5xl leading-snug font-bold mb-3 sm:mb-4 tracking-wide">
-            Limpe seu nome no Registrato CR
+            Limpe seu nome no Registrato SCR
             com a PrevSoluções
           </h1>
 
@@ -204,11 +204,9 @@
 
 
 <!-- ----------------beneficios section------------------->
-<section class="mt-0 py-12 px-6 md:px-16">
+<section id="beneficios" class="mt-0 py-12 px-6 md:px-16">
   <div class="mx-auto mb-12 gap-6 items-center text-center">
-    <span class="inline-block bg-[#E5FE70] text-black font-semibold px-3 py-1 rounded-md mb-5">
-      Limpe seu nome
-    </span>
+
 
     <h2 class="text-[42px] font-bold text-[#144444] leading-tight font-bricolage">
       Benefícios
@@ -293,7 +291,7 @@
 
 
 
-<section class="mt-12 py-12 px-6 md:px-16">
+<section id="faq" class="mt-12 py-12 px-6 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
     <!-- Coluna Esquerda -->
@@ -477,33 +475,26 @@
 </script>
 
 
+
 <hr class="my-8 border-gray-300" />
 
 <!-- Footer -->
 <footer class="bg-white">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
+  <div class="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between items-start">
+      <!-- Logo -->
       <div class="mb-6 md:mb-0">
         <a href="#" class="flex items-center">
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">PrevSoluções</span>
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+
+      <!-- Redes Sociais -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Links</h2>
-          <ul class="text-black dark:text-gray-500 font-medium">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Home</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Sobre</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Nossas redes</h2>
-          <ul class="text-gray-500 dark:text-gray-500 font-medium">
-            <li class="mb-4 flex items-center gap-2">
+          <h2 class="mb-4 text-sm font-semibold text-black uppercase">Nossas redes</h2>
+          <ul class="text-gray-600 font-medium space-y-4">
+            <li class="flex items-center gap-2">
               <i class="fab fa-instagram text-[#144444] text-xl"></i>
               <a href="https://www.instagram.com/prevsolucoesbrasil/" class="hover:underline text-[#144444]">Instagram</a>
             </li>
@@ -513,27 +504,18 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-black uppercase">Legal</h2>
-          <ul class="text-gray-500 dark:text-gray-500 font-medium">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
 
-    <div class="sm:flex sm:items-center sm:justify-between mt-4">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-500 font-bricolage">
-        © 2025 <a href="#" class="hover:underline">PrevSoluções</a>. All Rights Reserved.
+    <!-- Direitos autorais -->
+    <div class="mt-6 sm:flex sm:items-center sm:justify-between border-t pt-4">
+      <span class="text-sm text-gray-500 sm:text-center font-bricolage">
+        © 2025 <a href="#" class="hover:underline">PrevSoluções</a>. Todos os direitos reservados.
       </span>
     </div>
   </div>
 </footer>
+
 
 
 </body>
