@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #6b21a8; /* roxo */
+  --color-primary-hover: #581c87;
+  --color-secondary: #d1d5db; /* cinza claro */
+  --color-secondary-hover: #9ca3af;
+}
+
+.font-lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.font-source {
+  font-family: "Source Sans 3", sans-serif;
+}
